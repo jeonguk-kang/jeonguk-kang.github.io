@@ -1,0 +1,474 @@
+%-------------------------
+% Resume in Latex
+% Author : Puneet Gautam, puneet.gautam0206@gmail.com, punitrajgautam@uiit.ac.in
+% License : MIT
+%MIT License
+
+%Copyright (c) 2023 Puneet Gautam
+
+%Permission is hereby granted, free of charge, to any person obtaining a copy
+%of this software and associated documentation files (the "Software"), to deal
+%in the Software without restriction, including without limitation the rights
+%to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%copies of the Software, and to permit persons to whom the Software is
+%furnished to do so, subject to the following conditions:
+
+%The above copyright notice and this permission notice shall be included in all
+%copies or substantial portions of the Software.
+
+%THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%SOFTWARE.
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{kotex}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=0.6cm, top=0.5cm, right=0.6cm, bottom=0.5cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeKju}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Jeonguk Kang} % Your Name
+\newcommand{\course}{Ph.D.} % Your Course
+% \newcommand{\roll}{Your Roll No} % Your Roll No.
+\newcommand{\phone}{10-2556-3606} % Your Phone Number
+% \newcommand{\emaila}{seungho_han} %Email 1
+\newcommand{\emailb}{kju8765@gmail.com} %Email 2
+% \newcommand{\github}{your GitHub link} %Github
+%\newcommand{\website}{https://www.yourwebsite.com} %Website
+%\newcommand{\linkedin}{seungho-han-sk/} %linkedin
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+\parbox{3cm}{%
+
+\includegraphics[width=2.7cm,clip]{photo.jpg}
+
+}\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} & +82-\phone\\
+  
+  \course &  \href{mailto:\emailb}{\emailb}\\
+   {in Mechanical Engineering} 
+   % &  \href{} {LinkedIn} \\ %$|$ \href{\website}{Website}\\
+  % {Korea Advanced Institute of Science and Technology (KAIST)}
+\end{tabularx}
+}
+
+\vspace{-2mm}
+%-------------SUMMARY-----------------
+\section{\textbf{Research Experiences}}
+  \resumeSubHeadingListStart
+
+    \resumeKju
+      {Korea Institute of Science and Technology (KIST)}{03.2024-02.2025}{Post-doctoral Researcher}{}
+    \resumeKju
+      {Samsung Electronics, Samsung Research}{03.2025-Present}{Staff Engineer}{}
+        % \resumeProject
+        %   {} %Project Name
+        %   {} %Project Name, Location Name
+        %   {12.2018 - 12.2021 } %Event Dates
+        %   { } %Website
+
+
+
+
+\section{\textbf{Research Area}}
+Legged Robot, Wearable Robot, State Estimation, SLAM, Whole-body Control, Model Predictive Control, Reinforcement Learning
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1.1} % Default value: 1
+\small{\begin{tabularx}
+{\dimexpr\textwidth-2mm\relax}{|c|C|c|c|C|}
+  \hline
+  \textbf{Degree } & \textbf{University} & \textbf{GPA} & \textbf{Year}\\
+  \hline
+  Ph.D.  & KAIST & 4.05/4.3 & 03.2020-02.2024 \\
+ 
+  \hline
+  M.S. & KAIST & 4.12/4.3 & 03.2018-02.2020 \\
+  \hline
+  B.S. & KAIST & 3.72/4.3 (Major 3.94/4.3) & 03.2013-02.2018 \\
+  \hline
+  High School & Gyeonggibuk Science High School & / & 03.2011-02.2013 \\
+  \hline
+\end{tabularx}}
+\vspace{-1mm}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Publications}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Journal}{}{International}{}
+      \resumeItemListStart
+        \item {\textbf{Jeonguk Kang*}, {Donghyun Kim*}, Hyun-Joon  Chung, Kwang-Woo Jeon and  Kyung-Soo Kim. "Whole-body Control Based Lifting Assistance Simulation for Exoskeletons." International Journal of Control, Automation and Systems (2023): 1-9. (*: co-first author)} \vspace{+3mm}
+        \item {\textbf{Jeonguk Kang}, Hyunbin Kim, and Kyung-Soo Kim. "VIEW: Visual-Inertial External Wrench Estimator for Legged Robot." IEEE Robotics and Automation Letters (2023).} \vspace{+3mm}
+        \item { \textbf{Jeonguk Kang}, Hyunbin Kim, Byeong-Il Ham and Kyung-Soo Kim. "External Force Adaptive Control in Legged Robots Through Footstep Optimization and Disturbance Feedback." IEEE Access (2024).} \vspace{+3mm}
+
+        % \item {\textbf{(Under review)} Minseong Choi, Seunghoon Yang, Seungho Han, \textbf{Jeonguk Kang}, Minyeong Lee, Keun Ha Choi and Kyung-Soo Kim. "4D Radar and Camera Based Vector Map SLAM for Autonomous Driving." IEEE Transactions on Intelligent Vehicles (2024).} \vspace{+3mm}
+
+%         \item {\textbf{(Scheduled)} \textbf{Jeonguk Kang}, Sunwoo Kim, Sangdo Kim and Jongwon Lee. "Human-in-the-Loop Optimization of Hip Assist Exoskeleton to Improve Walking in Hemiplegic Patients." IEEE transactions on neural systems and rehabilitation
+% engineering (2024).} \vspace{+3mm}
+
+        % \item {\textbf{(Scheduled)} \textbf{Jeonguk Kang}, Sangdo Kim, Sunwoo Kim and Jongwon Lee. "Exoskeleton and Insole Sensor based Gait Parameter Estimation and Sarcopenia Identification." IEEE Robotics and Automation Letters (2025).} \vspace{+3mm}
+
+        \item {\textbf{(Under review)} Minseong Choi, \textbf{Jeonguk Kang}, Seungho Han and Kyung-Soo Kim. "4D radar-camera based vector map SLAM using dynamic object removal masks." IEEE Transactions on Intelligent Vehicles (2025).} \vspace{+3mm}
+
+        \item {\textbf{(Under review)} Byeong-Il Ham, Hyun-Bin KIm, \textbf{Jeonguk Kang}, Keun Ha Choi, and Kyung-Soo Kim. "Dual-MPC Footstep Planning for Robust Quadruped Locomotion." IEEE Transactions on Mechatronics (2025).} \vspace{+3mm}
+
+        \item {\textbf{(Under review)} Byungwook Lee, \textbf{Jeonguk Kang}, Seokju Lee, Kwang-Woo Jeon, Tae-Hwan Kim, Hyun-Joon Chung, Man bok Hong, Jangsik Park and Kyung-Soo Kim "Position Based Knee-Hip Interworking Control for a Lower Limb Exoskeleton in Lifting Assistance." IEEE Sensors (2025).} \vspace{+3mm}
+        
+        \item {\textbf{(Scheduled)} \textbf{Jeonguk Kang}, Minseong Choi, Seungho Han. "Dynamic Obstacle Aware Contact Force Control Using Sampling Based MPC and Admittance Controller." IEEE Robotics and Automation Letters (2025).} \vspace{+3mm}
+        
+        \item {\textbf{(Scheduled)} \textbf{Jeonguk Kang}, Seokju Lee, Seungho Han. "Dynamics-Aware Reinforcement Learning for Drift-Inspired Fast Turning in Quadrupedal Locomotion." IEEE Robotics and Automation Letters (2025).} \vspace{+3mm}
+        % \item {\textbf{(In preparation)} \textbf{Jeonguk Kang}, Hyunbin Kim, Byeong-Il Ham and Kyung-Soo Kim. "External Force Adaptive Gait Pattern Selection Strategy with Multi-Modal MPC." IEEE Access (2024).} \vspace{+3mm}
+        
+
+
+        % \item {\textbf{(In preparation)} Byeong-Il Ham, Hyun-Bin Kim, \textbf{Jeonguk Kang}, Keun Ha Choi and Kyung-Soo Kim. "Robust Footstep Planning for Quadruped Robot Using Dual Convex Model Predictive Control." IEEE Robotics and Automation Letters (2024).} \vspace{+3mm}
+
+
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Journal}{}{Domestic}{}
+      \resumeItemListStart
+        \item {\textbf{Jeonguk Kang}, Hangil Kim, Kyung-Soo Kim. 
+        "Whole-Body Control Based Strategy Simulation of Exo-Suit considering Singularity." Journal of the Korean Society for Precision Engineering, 2022, 39.11: 825-831.}
+      \resumeItemListEnd
+\vspace{+3mm}
+      \resumeSubheading
+      {Conference}{}{International}{}
+      \resumeItemListStart
+        \item {\textbf{Jeonguk Kang}, Hyun-Bin Kim, Keun Ha Choi and  Kyung-Soo Kim. "External Force Estimation of Legged Robots via a Factor Graph Framework with a Disturbance Observer." 2023 IEEE International Conference on Robotics and Automation (ICRA). IEEE, 2023.
+} \vspace{+3mm}
+        \item {Hyun-Bin Kim, Chanseok Kim, Byeong-Il Ham, \textbf{ Jeonguk Kang}, Minseong Choi, Keun-Ha Choi and Kyung-Soo Kim. "Development of Dual-Mode Locomotion Quadruped Robot for Pipe Inspection." 2024 IEEE International Conference on Robot Intelligence Technology and Applications (RITA). IEEE, 2024.
+} \vspace{+3mm}
+
+        \item {\textbf{Jeonguk Kang}, Byeong-Il Ham, Seungho Han, Hyun-Bin Kim and Kyung-Soo Kim. "Adaptive Gait Pattern Switching under External Disturbances Using Multi-Modal MPC." 2025 International Workshop on Robot and Human Communication (RO-MAN). IEEE, 2025.
+} \vspace{+3mm}
+        \item \textbf{(Under review)} Hanbyel Cho, Sang-Hun Kim, \textbf{Jeonguk Kang} and Donghan Koo. "SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating." 2026 International Conference on Intelligent Robots and Systems (IROS). IEEE, 2026.
+} \vspace{+3mm}
+      \resumeItemListEnd
+
+
+
+
+      % \resumeSubheading
+      % {Conference}{}{Domestic}{}
+      % \resumeItemListStart
+      %   \item {\textbf{강정욱}, 김한길, and 김경수. "특이성을 고려한 엑소수트의 전신 기반 제어 전략 시뮬레이션." 한국정밀공학회지 39.11 (2022): 825-831.} \vspace{+3mm}
+      % \resumeItemListEnd
+
+      \resumeSubheading
+      {Thesis}{}{Ph.D.}{}
+      \resumeItemListStart
+        \item {\textbf{Jeonguk Kang}, 
+        "Robust Locomotion Control of Legged Robots via Graph Optimization-Based Disturbance Estimation." Ph.D. Thesis, KAIST, 2024} \vspace{+3mm}
+      \resumeItemListEnd
+%    \vspace{-1mm}
+%    \resumeSubheading
+%      {Company Name}{Location}
+%      {Position}{June 2021 - July 2021}
+%      \resumeItemListStart
+%    \item {About work}
+%    \item {About Work}
+%    \resumeItemListEnd
+    
+    
+    % \item {More work done } .....
+  \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+%-----------PATENT-----------------
+\section{\textbf{Patents}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Korean Patent}{}{Registerd}{}
+      \resumeItemListStart
+        \item {"BULLETPROOF HELMET POSSIBLE TO BIOMETRIC COMMUNICATION BASED ON BRAIN WAVES, AND BIOMETRIC COMMUNICATION METHOD." Kyung-Soo Kim, \textbf{Jeonguk Kang}, Youjin Jeong, Kwangtae Kim. 10-2359390, 2022 } \vspace{+3mm}
+ 
+      \resumeItemListEnd
+
+
+
+
+
+
+%     \resumeSubheading
+%       {국내특허}{}{등록}{}
+%       \resumeItemListStart
+%         \item {뇌파 기반의 생체 통신이 가능한 방탄모 및 생체 통신 방법.
+% "BULLETPROOF HELMET POSSIBLE TO BIOMETRIC COMMUNICATION BASED ON BRAIN WAVES, AND BIOMETRIC COMMUNICATION METHOD." 김경수, 강정욱, 정유진, 김광태. 10-2359390, 2022 } \vspace{+3mm}
+
+%       \resumeItemListEnd
+
+
+    
+%    \vspace{-1mm}
+%    \resumeSubheading
+%      {Company Name}{Location}
+%      {Position}{June 2021 - July 2021}
+%      \resumeItemListStart
+%    \item {About work}
+%    \item {About Work}
+%    \resumeItemListEnd
+    
+    
+    % \item {More work done } .....
+  \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+    
+    \resumeProject
+      {Study on Brainwave-based Command Encoding and Decoding} %Project Name
+      % {뇌파기반동작패턴명령코드화 연구} %Project Name
+      {} %Project Name, Location Name
+      {12.2018 - 12.2021 } %Event Dates
+      { } %Website
+    
+     \vspace{-1mm}
+     
+    \resumeProject
+      % {상호연동 모듈형 근력보조 엑소수트 기술개발 (Project lead)} %Project Name
+      {Development of Modular Exoskeleton Technology for Gait Assistance (Project lead)} %Project Name
+      {} %Project Name, Location Name
+      {06.2019 - 02.2024 } %Event Dates
+      { } %Website
+    \resumeProject
+      % {해수배관점검용 인공지능 로봇 플랫폼 및 로봇 개발/운영 표준체계 개발} %Project Name
+      {Development of a Quadruped Robot Platform for Seawater Pipeline Inspection} %Project Name
+      {} %Project Name, Location Name
+      {06.2020 - 02.2023 } %Event Dates
+      { } %Website
+    \resumeProject
+      % {웨어러블 고관절 근력 보조 기술} %Project Name
+      {Hip Assistance Technology Using Wearable Exo-suit} %Project Name
+      {} %Project Name, Location Name
+      {03.2024 - 12.2024 } %Event Dates
+      { } %Website     \vspace{-1mm}
+    \resumeProject
+      {Confidential Corporate Project: Manipulation for healthcare} %Project Name
+      {} %Project Name, Location Name
+      {02.2025 -  } %Event Dates
+      { } %Website     \vspace{-1mm}
+    \resumeProject
+      {Confidential Corporate Project: Teleoperation for upper-body humanoid robot} %Project Name
+      {} %Project Name, Location Name
+      {02.2025 -  } %Event Dates
+      { } %Website     \vspace{-1mm}
+\resumeSubHeadingListEnd
+\vspace{-7.5mm}
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Honors and Rewards}}
+\resumeSubHeadingListStart
+    
+    \resumeProject
+      {\textbf{1st Place}, IEEE IROS 2025 workshop: Wheeled-Legged Robot Competition, \textbf{Jeonguk Kang}, Seokju Lee, Seungho Han} %Project Name
+      % {뇌파기반동작패턴명령코드화 연구} %Project Name
+      {} %Project Name, Location Name
+      {} %Event Dates
+      { } %Website
+    \resumeProject
+      {\textbf{Best System Paper Award}, IEEE RITA 2024 "Development of Dual-Mode Locomotion Quadruped Robot for Pipe Inspection."} %Project Name
+      % {뇌파기반동작패턴명령코드화 연구} %Project Name
+      {} %Project Name, Location Name
+      {} %Event Dates
+      { } %Website
+% % \textbf{-- Best System Paper Award (RITA, IEEE, 2024)}
+% \textbf{Best System Paper Award}, RITA, IEEE, 2025 — "Development of Dual-Mode Locomotion Quadruped Robot for Pipe Inspection."
+
+    
+\resumeSubHeadingListEnd
+\vspace{-7.5mm}
+
+
+
+
+
+\section{\textbf{Technical Skills}}
+ \resumeHeadingSkillStart
+  \resumeSubItem{Programming Languages} % Category
+    {C++, Python}
+    
+    %\vspace{-0.5mm}
+    
+ \resumeSubItem{Tools and Frameworks} % Category
+    {ROS, Matlab/Simulink,} % Skills
+
+ \resumeSubItem{Operating Systems} % Category
+    {Windows, Linux(Ubuntu)} % Skills
+ %\resumeSubItem{Robotic Platforms} % Category
+   % {Universal Robots (UR), Franka Emika, Unitree Robot} % Skills
+    %\vspace{-0.5mm}
+    
+ 
+ \resumeHeadingSkillEnd
+
+\vspace{-1.5mm}
+
+\section{\textbf{Language Skills}}
+\resumeHeadingSkillStart
+ \resumeSubItem{TOEIC} % Category
+    { 935 / 990}
+    %\vspace{-0.5mm}
+%  \resumeSubItem{Electrical and Electronics} % Category
+%     {Advanced Control Systems, Digital Systems, Microprocessors} % Skills
+\resumeHeadingSkillEnd
+
+\vspace{-1mm}
+%---------------CERTIFICATIONS-------------------
+\section{\textbf{Extracurricular Activities}}
+    \resumeItemListStart
+        \item { \textbf{Exchange Student :}} {Mechanical Engineering,  Karlsruher Institut für Technologie (KIT), Germany, 09.2016-02.2017} \\
+        \item { \textbf{Teaching Assistant at KAIST (2018-2023):}} {Multidisciplinary Capstone Design I,  Multidisciplinary Capstone Design II.} \\
+        % \item { \textbf{Reviewing services:}  IEEE TIM} \\
+    \resumeItemListEnd
+\vspace{-4mm}
+
+%-------------------------------------------
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
+
+
+
+% 전공평점:
+% 기계공학실험 열역학 고체역학 유체역학 동역학 기계요소설계 열전달 응용전자공학 진동공학 재료와 가공의 이해 기계기초실습 시스템 모델링 및 제어 기계공학특강 차량동역학 자동제어 인간과기계 융합캡스톤디자인1 응용유체역학 차량동역학 및 제어 기구설계학 융합캡스톤디자인 2

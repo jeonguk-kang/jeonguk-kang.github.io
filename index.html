@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeonguk Kang | AI Robotics Engineer</title>
+    <meta
+      name="description"
+      content="Jeonguk Kang is an AI Robotics Engineer at Samsung Electronics working on humanoid whole-body control, loco-manipulation, reinforcement learning, and sim-to-real transfer."
+    />
+    <meta property="og:title" content="Jeonguk Kang | AI Robotics Engineer" />
+    <meta
+      property="og:description"
+      content="Personal homepage of Jeonguk Kang, featuring research in humanoid whole-body control, loco-manipulation, reinforcement learning, and sim-to-real transfer."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/profile_kju.jpg" />
+    <meta property="og:url" content="https://username.github.io/" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-shell nav-row">
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-hidden="true"></button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">about</a>
+          <a href="#research">research</a>
+          <a href="#projects">projects</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-shell page">
+      <section class="hero" id="about">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>Jeonguk Kang</h1>
+            <p>
+              I am currently an AI Robotics Engineer at Samsung Electronics, where I develop
+              control and learning frameworks for humanoid robots, with a focus on
+              whole-body control, loco-manipulation, and sim-to-real adaptation for
+              real-world deployment.
+            </p>
+            <p>
+              My research aims to build reliable and scalable control pipelines for embodied
+              robotic systems operating in complex real-world environments. I am particularly
+              interested in reinforcement learning for humanoid control, state estimation,
+              and practical approaches to narrowing the sim-to-real gap in real-world robotics.
+            </p>
+          </div>
+
+          <aside class="hero-side">
+            <div class="profile-frame">
+              <img
+                class="profile-image"
+                src="assets/profile_kju.png"
+                alt="Portrait placeholder for Jeonguk Kang"
+                width="280"
+                height="320"
+              />
+            </div>
+          </aside>
+        </div>
+
+        <ul class="timeline">
+          <li>2026. 01 - Present: Staff Engineer, Samsung Electronics, Future Robot AI Group</li>
+          <li>2025. 03 - 2025. 12: Staff Engineer, Samsung Research, Robot Center</li>
+          <li>2024. 03 - 2025. 02: Post-doctoral Researcher, Korea Institute of Science and Technology (KIST)</li>
+          <li>2020. 03 - 2024. 02: Ph.D. in Mechanical Engineering, Korea Advanced Institute of Science and Technology (KAIST)</li>
+          <li>2018. 03 - 2020. 02: M.S. in Mechanical Engineering, Korea Advanced Institute of Science and Technology (KAIST)</li>
+          <li>2013. 03 - 2018. 02: B.S. in Mechanical Engineering, Korea Advanced Institute of Science and Technology (KAIST)</li>
+        </ul>
+
+        <p class="keyword-line">
+          <strong>Research Keywords</strong> :
+          Humanoids and Quadrupeds, Whole-Body Control, Loco-Manipulation, Sim-to-Real Adaptation,
+          Reinforcement Learning, State Estimation, Model Predictive Control (MPC)
+        </p>
+
+      </section>
+
+      <section class="section" id="research">
+        <h2>Research</h2>
+
+        <ol class="research-list research-showcase">
+          <li class="research-entry research-entry-featured">
+            <div class="research-media research-thumb">
+              <video autoplay muted loop playsinline poster="assets/profile.jpg">
+                <source src="assets/research/2025_safeflow.mp4" type="video/mp4" />
+                <img src="assets/profile.jpg" alt="SafeFlow under review placeholder media" />
+              </video>
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating</strong><br />
+                <a href="https://hanbyelcho.info/">Hanbyel Cho</a>, <a href="https://www.linkedin.com/in/sanghunkim68/">Sang-Hun Kim</a>, <u>Jeonguk Kang</u>, Donghan Koo<br />
+                arXiv Preprint, 2026
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-safeflow">ABS</button>
+                <a href="https://arxiv.org/abs/2603.23983">ARXIV</a>
+              </div>
+              <div class="abs-box" id="abs-safeflow" hidden></div>
+            </div>
+          </li>
+
+          <li class="research-entry">
+            <div class="research-media research-thumb">
+              <img src="assets/research/RAYTOLD2.png" alt="RAY-TOLD media" />
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>RAY-TOLD: Ray-Based Latent Dynamics for Dense Dynamic Obstacle Avoidance with TDMPC</strong><br />
+                <a href="https://celos.super.site/">Seungho Han</a>, <a href="https://seokju-lee.github.io/">Seokju Lee</a>, <u>Jeonguk Kang</u>* (*Corresponding author)<br />
+                Under review, 2026
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-raytold">ABS</button>
+              </div>
+              <div class="abs-box" id="abs-raytold" hidden></div>
+            </div>
+          </li>
+
+          <li class="research-entry">
+            <div class="research-media research-thumb">
+              <video autoplay muted loop playsinline poster="assets/profile.jpg">
+                <source src="assets/research/4D_Radar.mp4" type="video/mp4" />
+                <img src="assets/profile.jpg" alt="4D radar-camera vector map SLAM media" />
+              </video>
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>4D Radar-Camera Based Vector Map SLAM Using Dynamic Object Removal Mask</strong><br />
+                <a href="https://sites.google.com/view/rv-lab">Minseong Choi</a>, <u>Jeonguk Kang</u>, <a href="https://celos.super.site/">Seungho Han</a><br />
+                Under review, 2026
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-radar-slam">ABS</button>
+              </div>
+              <div class="abs-box" id="abs-radar-slam" hidden></div>
+            </div>
+          </li>
+
+          <li class="research-entry">
+            <div class="research-media research-thumb">
+              <video autoplay muted loop playsinline poster="assets/profile.jpg">
+                <source src="assets/research/DUAL.mp4" type="video/mp4" />
+                <img src="assets/profile.jpg" alt="Dual-MPC footstep planning media" />
+              </video>
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>Dual-MPC Footstep Planning for Robust Quadruped Locomotion</strong><br />
+                Byeong-Il Ham, Hyun-Bin Kim, <u>Jeonguk Kang</u>, Keun Ha Choi, Kyung-Soo Kim<br />
+                Under review, 2025
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-dualmpc">ABS</button>
+                <a href="https://arxiv.org/abs/2511.07921">ARXIV</a>
+              </div>
+              <div class="abs-box" id="abs-dualmpc" hidden></div>
+            </div>
+          </li>
+
+          <li class="research-entry">
+            <div class="research-media research-thumb">
+              <video autoplay muted loop playsinline poster="assets/profile.jpg">
+                <source src="assets/research/ROMAN.mp4" type="video/mp4" />
+                <img src="assets/profile.jpg" alt="Adaptive gait pattern switching placeholder media" />
+              </video>
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>Adaptive Gait Pattern Switching under External Disturbances Using Multi-Modal MPC</strong><br />
+                <u>Jeonguk Kang</u>, Byeong-Il Ham, <a href="https://celos.super.site/">Seungho Han</a>, Hyun-Bin Kim, Kyung-Soo Kim<br />
+                IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), 2025
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-roman">ABS</button>
+                <a href="https://koasas.kaist.ac.kr/bitstream/10203/335947/1/Adaptive_Gait_Pattern_Switching_under_External_Disturbances_Using_Multi-Modal_MPC.pdf">PAPER</a>
+              </div>
+              <div class="abs-box" id="abs-roman" hidden></div>
+            </div>
+          </li>
+
+          <li class="research-entry">
+            <div class="research-media research-thumb">
+              <img src="assets/research/IROS competiton.gif" alt="IROS workshop competition media" />
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>IEEE IROS 2025 Workshop: Wheeled-Legged Robot Competition</strong><br />
+                <a href="https://seokju-lee.github.io/">Seokju Lee</a>*, <u>Jeonguk Kang</u>*, <a href="https://celos.super.site/">Seungho Han</a>* (*Equal contribution)<br />
+                Winner (1st Prize), 2025
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-iroscomp">ABS</button>
+              </div>
+              <div class="abs-box" id="abs-iroscomp" hidden></div>
+            </div>
+          </li>
+
+          <li class="research-entry">
+            <div class="research-media research-thumb">
+              <img src="assets/research/RITA.png" alt="Remote piping inspection system media" />
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>Development of Remote Piping Inspection System with Dual-Mode Locomotion Quadruped Robot</strong><br />
+                Hyun-Bin Kim, Chanseok Kim, Byeong-Il Ham, <u>Jeonguk Kang</u>, <a href="https://sites.google.com/view/rv-lab">Minseong Choi</a>, Keun-Ha Choi, Kyung-Soo Kim<br />
+                International Conference on Robot Intelligence Technology and Applications (RITA), 2024<br />
+                (Best System Paper Award)
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-rita">ABS</button>
+                <a href="https://www.researchgate.net/profile/Hyun-Bin-Kim/publication/388931032_Development_of_Remote_Piping_Inspection_System_with_Dual-Mode_Locomotion_Quadruped_Robot/links/67ad53c8645ef274a47d5326/Development-of-Remote-Piping-Inspection-System-with-Dual-Mode-Locomotion-Quadruped-Robot.pdf">PAPER</a>
+              </div>
+              <div class="abs-box" id="abs-rita" hidden></div>
+            </div>
+          </li>
+
+          <li class="research-entry">
+            <div class="research-media research-thumb">
+              <img src="assets/research/IEEE ACCESS.png" alt="External force adaptive control media" />
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>External Force Adaptive Control in Legged Robots Through Footstep Optimization and Disturbance Feedback</strong><br />
+                <u>Jeonguk Kang</u>, Hyun-Bin Kim, Byeong-Il Ham, Kyung-Soo Kim<br />
+                IEEE Access, 2024
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-access">ABS</button>
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10731682">PAPER</a>
+              </div>
+              <div class="abs-box" id="abs-access" hidden></div>
+            </div>
+          </li>
+
+          <li class="research-entry">
+            <div class="research-media research-thumb">
+              <img src="assets/research/VIEW.png" alt="VIEW paper media" />
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>View: Visual-inertial External Wrench Estimator for Legged Robot</strong><br />
+                <u>Jeonguk Kang</u>, Hyun-Bin Kim, Kyung-Soo Kim<br />
+                IEEE Robotics and Automation Letters (RA-L), 2023
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-view">ABS</button>
+                <a href="https://ieeexplore.ieee.org/abstract/document/10273601">PAPER</a>
+              </div>
+              <div class="abs-box" id="abs-view" hidden></div>
+            </div>
+          </li>
+
+          <li class="research-entry">
+            <div class="research-media research-thumb">
+              <img src="assets/research/IJCAS.png" alt="Exoskeleton lifting assistance media" />
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>Whole-body Control Based Lifting Assistance Simulation for Exoskeletons</strong><br />
+                <u>Jeonguk Kang</u>, Donghyun Kim, Hyun-Joon Chung, Kwang-Woo Jeon, Kyung-Soo Kim<br />
+                International Journal of Control, Automation and Systems (IJCAS), 2023
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-exo">ABS</button>
+                <a href="https://www.researchgate.net/profile/Jeonguk-Kang/publication/370122791_Whole-body_Control_Based_Lifting_Assistance_Simulation_for_Exoskeletons/links/653a4c2e1d6e8a7070505882/Whole-body-Control-Based-Lifting-Assistance-Simulation-for-Exoskeletons.pdf">PAPER</a>
+              </div>
+              <div class="abs-box" id="abs-exo" hidden></div>
+            </div>
+          </li>
+
+          <li class="research-entry">
+            <div class="research-media research-thumb">
+              <img src="assets/research/ICRA.png" alt="External force estimation media" />
+            </div>
+            <div class="research-content">
+              <p class="research-paper">
+                <strong>External Force Estimation of Legged Robots via a Factor Graph Framework with a Disturbance Observer</strong><br />
+                <u>Jeonguk Kang</u>, Hyun-Bin Kim, Keun Ha Choi, Kyung-Soo Kim<br />
+                IEEE International Conference on Robotics and Automation (ICRA), 2023
+              </p>
+              <div class="research-actions">
+                <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-icra">ABS</button>
+                <a href="https://www.researchgate.net/profile/Keun-Choi/publication/372117257_External_Force_Estimation_of_Legged_Robots_via_a_Factor_Graph_Framework_with_a_Disturbance_Observer/links/64eff40af850d430c36ad51a/External-Force-Estimation-of-Legged-Robots-via-a-Factor-Graph-Framework-with-a-Disturbance-Observer.pdf">PAPER</a>
+              </div>
+              <div class="abs-box" id="abs-icra" hidden></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>Projects</h2>
+
+        <ol class="simple-list">
+          <li>
+            <h3>Whole-body control of a hybrid bipedal robot based on pneumatic and electric actuation <span class="project-period">12.2018 - 12.2021</span></h3>
+          </li>
+          <li>
+            <h3>Development of Modular Exoskeleton Technology for Gait Assistance <span class="project-period">06.2019 - 02.2024</span></h3>
+          </li>
+          <li>
+            <h3>Development of a Quadruped Robot Platform for Seawater Pipeline Inspection <span class="project-period">06.2020 - 02.2023</span></h3>
+          </li>
+          <li>
+            <h3>Hip Assistance Technology Using Wearable Exo-suit <span class="project-period">03.2024 - 12.2024</span></h3>
+          </li>
+          <li>
+            <h3>Robotic Manipulation for Healthcare: Automated Ultrasound Scanning <span class="project-period">03.2025 - 12.2025</span></h3>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-shell site-footer">
+      <p class="social-links" aria-label="Contact links">
+        <a
+          class="social-link"
+          href="mailto:kju8765@gmail.com"
+          aria-label="Email"
+          title="Email"
+        ><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+        <a
+          class="social-link"
+          href="https://scholar.google.co.kr/citations?user=ND5M6A4AAAAJ&amp;hl=ko"
+          aria-label="Google Scholar"
+          title="Google Scholar"
+        ><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+        <a
+          class="social-link"
+          href="https://www.linkedin.com/in/jeonguk-kang-089950264"
+          aria-label="LinkedIn"
+          title="LinkedIn"
+        ><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+      </p>
+      <p>&copy; <span id="current-year">2026</span> Jeonguk Kang</p>
+    </footer>
+
+    <script src="data/site.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
