@@ -120,7 +120,7 @@
                 <a href="https://hanbyelcho.info/safeflow/">WEBSITE</a>
               </div>
               <div class="abs-box" id="abs-safeflow" hidden>
-                SafeFlow introduces a real-time text-driven humanoid control framework that combines physics-guided rectified flow with a multi-stage safety gate. It improves executability, speed, and safety by filtering out out-of-distribution prompts, unstable generations, and motions that violate hard kinematic limits before low-level tracking.
+                Recent advances in real-time interactive text-driven motion generation have enabled humanoids to perform diverse behaviors. However, kinematics-only generators often exhibit physical hallucinations, producing motion trajectories that are physically infeasible to track with a downstream motion tracking controller or unsafe for real-world deployment. These failures often arise from the lack of explicit physics-aware objectives for real-robot execution and become more severe under out-of-distribution (OOD) user inputs. Hence, we propose SafeFlow, a text-driven humanoid whole-body control framework that combines physics-guided motion generation with a 3-Stage Safety Gate driven by explicit risk indicators. SafeFlow adopts a two-level architecture. At the high level, we generate motion trajectories using Physics-Guided Rectified Flow Matching in a VAE latent space to improve real-robot executability, and further accelerate sampling via Reflow to reduce the number of function evaluations (NFE) for real-time control. The 3-Stage Safety Gate enables selective execution by detecting semantic OOD prompts using a Mahalanobis score in text-embedding space, filtering unstable generations via a directional sensitivity discrepancy metric, and enforcing final hard kinematic constraints such as joint and velocity limits before passing the generated trajectory to a low-level motion tracking controller. Extensive experiments on the Unitree G1 demonstrate that SafeFlow outperforms prior diffusion-based methods in success rate, physical compliance, and inference speed, while maintaining diverse expressiveness.
               </div>
             </div>
           </li>
@@ -139,7 +139,7 @@
                 <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-raytold">ABS</button>
               </div>
               <div class="abs-box" id="abs-raytold" hidden>
-                This work studies a ray-based latent dynamics model for TDMPC in dense dynamic environments. The goal is to encode scene geometry and obstacle motion into a predictive representation that supports safer and more robust obstacle avoidance.
+                Dense, dynamic crowds pose a persistent challenge for autonomous mobile robots. Purely reactive planning methods, such as Model Predictive Path Integral (MPPI) control, often fail to escape local minima in complex scenarios due to their limited prediction horizon. To bridge this gap, we propose Ray-based Task-Oriented Latent Dynamics (RAY-TOLD), a hybrid control architecture that integrates obstacle information into latent dynamics and utilizes the robustness of physics-based MPPI with the long-horizon foresight of reinforcement learning. RAY-TOLD leverages a LiDAR-centric latent dynamics model to encode high-dimensional sensor data into a compact state representation, enabling the learning of a terminal value function and a policy prior. We introduce a policy mixture sampling strategy that augments the MPPI candidate population with trajectories derived from the learned policy, effectively guiding the planner towards the goal while maintaining kinematic feasibility. Extensive tests in a stochastic environment with high-density dynamic obstacles demonstrate that our method outperforms the MPPI baseline, reducing the collision rate. The results confirm that blending short-horizon physics-based rollouts with learned long-horizon intent significantly enhances navigation reliability and safety.
               </div>
             </div>
           </li>
@@ -161,7 +161,7 @@
                 <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-radar-slam">ABS</button>
               </div>
               <div class="abs-box" id="abs-radar-slam" hidden>
-                This work proposes a vector-map SLAM pipeline that fuses 4D radar and camera sensing while masking moving objects. By suppressing dynamic clutter, the method aims to improve localization and mapping robustness in real-world driving and robotic environments.
+                To perform global or local path planning for autonomous driving, a vector map containing lane information is required. Vector maps, which is also called HD maps, are typically developed using expensive LiDAR or a combination of cameras and deep learning. In this paper, a real-time vector map SLAM using the emerging 4D radar and low-cost cameras is proposed. First, Dynamic Objects Removal Mask (DORM) based visual-4D radar odometry is suggested, which is robust under dynamic environments like urban areas. Experimental results demonstrated better performance in dynamic scenarios compared to state-of-the-art LiDAR SLAM and other techniques. Secondly, a double check loop detection method is proposed using the vector map generated by Inverse Perspective Mapping (IPM) and the 4D radar Z projection image. Experimental validation showed a reduction in odometry drift through pose graph optimization based loop closure. Supplementary video related to this work can be found at the following link:https://youtu.be/MEGpB7BKaMY?feature=shared.
               </div>
             </div>
           </li>
@@ -184,7 +184,7 @@
                 <a href="https://arxiv.org/abs/2511.07921">ARXIV</a>
               </div>
               <div class="abs-box" id="abs-dualmpc" hidden>
-                This paper proposes a dual-MPC footstep planning strategy for quadrupeds that explicitly optimizes foothold placement to regulate body orientation under disturbances. By coupling body stabilization with footstep adaptation, the method improves robustness against unwanted body rotations during locomotion.
+                In this paper, we propose a footstep planning strategy based on model predictive control (MPC) that enables robust regulation of body orientation against undesired body rotations by optimizing footstep placement. Model-based locomotion approaches typically adopt heuristic methods or planning based on the linear inverted pendulum model. These methods account for linear velocity in footstep planning, while excluding angular velocity, which leads to angular momentum being handled exclusively via ground reaction force (GRF). Footstep planning based on MPC that takes angular velocity into account recasts the angular momentum control problem as a dual-input approach that coordinates GRFs and footstep placement, instead of optimizing GRFs alone, thereby improving tracking performance. A mutual-feedback loop couples the footstep planner and the GRF MPC, with each using the other's solution to iteratively update footsteps and GRFs. The use of optimal solutions reduces body oscillation and enables extended stance and swing phases. The method is validated on a quadruped robot, demonstrating robust locomotion with reduced oscillations, longer stance and swing phases across various terrains.
               </div>
             </div>
           </li>
@@ -207,7 +207,7 @@
                 <a href="https://koasas.kaist.ac.kr/bitstream/10203/335947/1/Adaptive_Gait_Pattern_Switching_under_External_Disturbances_Using_Multi-Modal_MPC.pdf">PAPER</a>
               </div>
               <div class="abs-box" id="abs-roman" hidden>
-                This work presents a gait selection strategy for quadrupedal robots under external forces using a multimodal MPC framework. By evaluating multiple gait types and adjusting contact timing online, it improves disturbance rejection, interaction performance, and locomotion stability.
+                This study presents the development of a gait selection strategy for quadrupedal robots capable of responding to external forces. Unlike traditional controllers, our approach directly utilizes information about external forces and introduces a strategy to adapt the robot’s gait patterns accordingly. To simultaneously solve and compare various gait types, we propose a multimodal Model Predictive Control (MPC) framework. This framework dynamically adjusts four distinct gaits trotting, bounding, pacing, and walking as well as the contact time with the ground in real-time. The results demonstrate that this approach improves the robot’s ability to withstand disturbances while interacting with external environments, significantly enhancing operational performance and stability.
               </div>
             </div>
           </li>
@@ -226,7 +226,7 @@
                 <button class="abs-button" type="button" aria-expanded="false" aria-controls="abs-iroscomp">ABS</button>
               </div>
               <div class="abs-box" id="abs-iroscomp" hidden>
-                This competition system integrates robust wheeled-legged locomotion, agile mode transitions, and reliable control for challenging workshop tasks. The platform was designed to handle varied terrain and task constraints while maintaining stable and efficient mobility.
+                Path tracking algorithm for wheeled-legged robot using mixture-of-experts.
               </div>
             </div>
           </li>
@@ -247,7 +247,7 @@
                 <a href="https://www.researchgate.net/profile/Hyun-Bin-Kim/publication/388931032_Development_of_Remote_Piping_Inspection_System_with_Dual-Mode_Locomotion_Quadruped_Robot/links/67ad53c8645ef274a47d5326/Development-of-Remote-Piping-Inspection-System-with-Dual-Mode-Locomotion-Quadruped-Robot.pdf">PAPER</a>
               </div>
               <div class="abs-box" id="abs-rita" hidden>
-                This paper presents a remote seawater-pipeline inspection robot built around dual-mode quadruped and tracked locomotion. The system combines interchangeable inspection modules with real-time localization so it can traverse confined pipe networks, pass obstacles such as valves, and collect inspection data over long distances.
+                Visual inspection of the interior of seawater pipelines for discharging waste heat from power plants is essential for the stable operation. However, the confined space and varied internal structures make navigation difficult for both workers and conventional pipe inspection robots. Therefore, we developed a pipe inspection robot system with the following features: a quadrupedal and tracked combined locomotion system, interchangeable inspection modules for specific inspection needs, and real-time localization with an external monitoring program. This design is intended to explore hundreds of meters long piping networks, pass through structures such as butterfly valves, and functional probes, and collect various information to assess the health of the pipelines. The system was tested in model environments to validate its mobility, inspection capabilities, and localization accuracy.
               </div>
             </div>
           </li>
@@ -267,7 +267,7 @@
                 <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10731682">PAPER</a>
               </div>
               <div class="abs-box" id="abs-access" hidden>
-                This paper develops an external-force-adaptive controller for quadruped robots that uses estimated disturbance information in footstep optimization and force redistribution. By incorporating a balancing index and disturbance feedback into the dynamics, it improves stability, traction generation, and resilience during interaction with the environment.
+                This article studies a robust controller capable of responding to external forces applied to a quadruped robot. Unlike conventional methods, our controller utilizes information about external forces to achieve better performance. We incorporate disturbance feedback into the robot dynamics and calculate a balancing index that considers the estimated force information to ensure coverage of the robot’s support polygon. This approach allows the robot to adjust its legs in response to external forces, redistribute ground reaction forces, and enhance stability, enabling it to handle greater pressures. Additionally, it increases the amount of traction force generated while maintaining posture. These capabilities are expected to maximize disturbance resilience, enhance task performance, and improve stability during interactions with external environments, ultimately contributing to improved mobility of the robot in real-world scenarios.
               </div>
             </div>
           </li>
@@ -287,7 +287,7 @@
                 <a href="https://ieeexplore.ieee.org/abstract/document/10273601">PAPER</a>
               </div>
               <div class="abs-box" id="abs-view" hidden>
-                VIEW proposes a sensorless external wrench estimation method for legged robots by combining a nonlinear disturbance observer with factor-graph optimization. It tightly fuses IMU, camera, and estimated leg-force information to improve accuracy over conventional approaches while avoiding dedicated force/torque sensors.
+                Information about the external wrench in legged robots is crucial for performing interactive tasks. However, most previous research has relied on attaching force/torque sensors to the end-effectors, which has disadvantages in terms of cost and maintenance. Therefore, this article presents a sensorless method for estimating the external wrench on a legged robot. It involves two main steps. First, a nonlinear disturbance observer is used to obtain a noise-reduced ground reaction force estimate. Then, to obtain the applied external wrench value, a factor graph optimization method is implemented to couple the IMU, camera, and estimated leg force data tightly. Unlike the conventional method, the high performance of the optimization approach and the fusion with the exteroceptive sensor improved the estimation accuracy. The effectiveness of the proposed method was verified through several experiments.
               </div>
             </div>
           </li>
@@ -307,7 +307,7 @@
                 <a href="https://www.researchgate.net/profile/Jeonguk-Kang/publication/370122791_Whole-body_Control_Based_Lifting_Assistance_Simulation_for_Exoskeletons/links/653a4c2e1d6e8a7070505882/Whole-body-Control-Based-Lifting-Assistance-Simulation-for-Exoskeletons.pdf">PAPER</a>
               </div>
               <div class="abs-box" id="abs-exo" hidden>
-                This work proposes a whole-body-control-based lifting assistance strategy for exoskeletons to improve stability and efficiency during squat lifting. The controller optimizes balance, support, and singularity avoidance, and simulation results show reduced human joint torque together with better overall lifting performance.
+                Exoskeletons can help humans in a variety of ways in performing tasks. In particular, during the lifting operation, a human places a great burden on the knee or waist joint, and the exoskeleton can reduce the risks of this task. However, due to the weight of the exoskeleton itself and the movement of the overall center of gravity, balance ability and efficiency may decrease. Therefore, an appropriate assistance torque distribution strategy is required to achieve high performance with the exoskeleton. In order to solve the aforementioned problem, we propose an assistance method based on whole-body control. The proposed algorithm is meaningful because it is different from other simple model-based controllers. The controller fully utilize the dynamics to achieve a high performance. In addition, by adding a straight leg cost term, the singularity problem in the fully extended configuration was solved. This method finds the optimal solution that satisfies various constraints and minimizes the objective functions. Each objective is composed of a balancing-related term that minimizes the variation in the center of gravity, a term that supports the weight of the human and exoskeleton, a term that solves the singularity problem and a term related to efficiency. In this paper, first, a motion capture experiment is performed to analyze a human’s lifting motion. Through this experiment, the trajectory of each joint angle is obtained. With PD (proportional-derivative) feedback from the joint trajectories, the exoskeleton generates human torque in the simulation and implements a lifting operation. Second, a simulation is performed with the proposed controller. As a result, it is confirmed that the proposed method reduces the amount of human joint torque and increases stability and efficiency.
               </div>
             </div>
           </li>
@@ -327,7 +327,7 @@
                 <a href="https://www.researchgate.net/profile/Keun-Choi/publication/372117257_External_Force_Estimation_of_Legged_Robots_via_a_Factor_Graph_Framework_with_a_Disturbance_Observer/links/64eff40af850d430c36ad51a/External-Force-Estimation-of-Legged-Robots-via-a-Factor-Graph-Framework-with-a-Disturbance-Observer.pdf">PAPER</a>
               </div>
               <div class="abs-box" id="abs-icra" hidden>
-                This paper proposes a sensorless external-force estimation method for legged robots using a disturbance observer and a factor-graph framework. Leg forces are first estimated from robot dynamics, then tightly fused with visual-inertial sensing to jointly estimate pose and external force, even under slip and impact during standing and walking.
+                Recently, legged robots have been used for various purposes, such as exploring unknown terrain or interacting with the world. For control and planning legged systems during interactive operations, it is essential to estimate and respond to external forces. However, in legged system, it becomes difficult to estimate forces due to highly dynamic situations. There are several studies that use a force sensor on the foot and end effector, but these approaches have disadvantages in terms of cost and sustainability. Therefore, in this paper, we propose an improved method for estimating external forces without a force sensor. First, each leg force was obtained using the system dynamics of the robot with a disturbance observer. Then, by preintegration, it was tightly coupled with other sensors to estimate the pose and external force simultaneously. Despite the impact and slip, we estimate external forces accurately in standing and walking motions. Moreover, we compared pose estimation performance with VINS-Mono [1], and there is no significant accuracy degradation in spite of highly dynamic force residual.
               </div>
             </div>
           </li>
