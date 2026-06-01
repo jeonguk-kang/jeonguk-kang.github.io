@@ -1,11 +1,11 @@
 window.SITE_DATA = {
   profile: {
     name: "Jeonguk Kang",
-    title: "AI Robotics Engineer",
+    title: "Senior Research Engineer",
     subtitle:
-      "AI Robotics Engineer at Samsung Electronics, working on humanoid whole-body control, loco-manipulation, and sim-to-real adaptation for deployable robotic systems.",
+      "Senior Research Engineer at Samsung Electronics. My work focuses on humanoid robot control, reinforcement learning, and sim-to-real adaptation for real-world robotic systems.",
     intro:
-      "Jeonguk Kang is an AI Robotics Engineer at Samsung Electronics, where he develops control and learning frameworks for humanoid robots with a focus on whole-body control, loco-manipulation, and sim-to-real adaptation for real-world deployment. His research aims to build reliable and scalable control pipelines for embodied robotic systems operating in complex environments, with particular interest in reinforcement learning for humanoid control, state estimation, and practical approaches to narrowing the sim-to-real gap.",
+      "Senior Research Engineer at Samsung Electronics. My work focuses on humanoid robot control, reinforcement learning, and sim-to-real adaptation for real-world robotic systems.",
     image: "assets/profile_kju.png",
     cv: "assets/CV_Jungwook_Kang.pdf"
   },
@@ -17,8 +17,7 @@ window.SITE_DATA = {
   },
   about: {
     paragraphs: [
-      "Jeonguk Kang is currently an AI Robotics Engineer at Samsung Electronics, where he develops control and learning frameworks for humanoid robots with a focus on whole-body control, loco-manipulation, and sim-to-real adaptation for real-world deployment. He previously served as a Post-doctoral Researcher at Korea Institute of Science and Technology (KIST) after completing his Ph.D. in Mechanical Engineering at Korea Advanced Institute of Science and Technology (KAIST).",
-      "His research aims to build reliable and scalable control pipelines for embodied robotic systems operating in complex real-world environments, with particular interest in reinforcement learning for humanoid control, state estimation, and practical approaches to narrowing the sim-to-real gap."
+      "Senior Research Engineer at Samsung Electronics. My work focuses on humanoid robot control, reinforcement learning, and sim-to-real adaptation for real-world robotic systems."
     ],
     areas: [
       "Humanoid Robot",
