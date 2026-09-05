@@ -3,9 +3,9 @@ window.SITE_DATA = {
     name: "Jeonguk Kang",
     title: "AI/Robotics Engineer",
     subtitle:
-      "AI/Robotics Engineer at Samsung Electronics. My work focuses on humanoid robot control, reinforcement learning, and sim-to-real adaptation for real-world robotic systems.",
+      "AI/Robotics Engineer at Samsung Electronics. My work focuses on humanoid whole-body control, reinforcement learning, and sim-to-real adaptation for real-world robotic systems.",
     intro:
-      "AI/Robotics Engineer at Samsung Electronics. My work focuses on humanoid robot control, reinforcement learning, and sim-to-real adaptation for real-world robotic systems.",
+      "AI/Robotics Engineer at Samsung Electronics. My work focuses on humanoid whole-body control, reinforcement learning, and sim-to-real adaptation for real-world robotic systems.",
     image: "assets/profile_kju.png",
     cv: "assets/CV_Jungwook_Kang.pdf"
   },
@@ -17,7 +17,7 @@ window.SITE_DATA = {
   },
   about: {
     paragraphs: [
-      "AI/Robotics Engineer at Samsung Electronics. My work focuses on humanoid robot control, reinforcement learning, and sim-to-real adaptation for real-world robotic systems."
+      "AI/Robotics Engineer at Samsung Electronics. My work focuses on humanoid whole-body control, reinforcement learning, and sim-to-real adaptation for real-world robotic systems."
     ],
     areas: [
       "Humanoid Robot",
